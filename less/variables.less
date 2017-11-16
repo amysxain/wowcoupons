@@ -1,0 +1,56 @@
+.p {color: #72848c;}
+@dur: .3s;
+.transition (@transition:all ease-in-out @dur) {
+	-webkit-transition: @transition;
+	transition: @transition;
+}
+@rad: 3px;
+.radius (@radius:@rad) {
+	border-radius: @rad;
+}
+.block {display:block;}
+.inline-block { display:inline-block}
+.no-padding { padding:0 !important;}
+.no-margin { margin:0 !important;}
+.padding30 { padding: 30px !important;}
+@stMargin: 30px;
+@pclr  : #4e5ad5;
+@sclr  : #000;
+@tclr  : #14b77a;
+@yclr : #fedb3f;
+@black : #000;
+@white : #FFF;
+.pbg { background:@pclr}
+.sbg { background:@sclr}
+.tbg { background:@tclr}
+.ybg { background:@yclr}
+.pclr { color:@pclr}
+.sclr { color:@sclr}
+.tclr { color:@tclr}
+.yclr { color:@yclr}
+.wclr { color:@white}
+.bclr { color:@black}
+.black { background:#000;}
+.white { background:#FFF;}
+.sfont {font-family: 'Roboto', sans-serif;}
+.flight { font-weight:300}
+.fnormal { font-weight:400}
+.fmedium { font-weight:500}
+@shade : #6971c3;
+.fbold{ font-weight:700}
+.img-shadow {box-shadow: 0 0 0 5px #ffffff, 0 0 0 6px #eeeeee, 0 3px 6px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12), 0 3px 4px -1px rgba(0, 0, 0, 0.2);}
+.z-depth-0{box-shadow:none !important}
+.z-depth-1{box-shadow:0 2px 2px 0 fade(@pclr, 16%),0 1px 5px 0 fade(@pclr, 12%),0 3px 1px -2px fade(@pclr, 10%)}
+.z-depth-1-half{box-shadow:0 3px 3px 0 fade(@pclr, 16%),0 1px 7px 0 fade(@pclr, 12%),0 3px 1px -1px fade(@pclr, 10%)}
+.z-depth-2{box-shadow:0 4px 5px 0 fade(@shade, 16%),0 1px 10px 0 fade(@shade, 12%),0 2px 4px -1px fade(@shade, 10%)}
+.z-depth-3{box-shadow:0 6px 10px 0 fade(@pclr, 8%),0 1px 18px 0 fade(@pclr, 6%),0 3px 5px -1px fade(@pclr, 5%)}
+.z-depth-4,.modal{box-shadow: 0 8px 10px 1px fade(@pclr, 8%), 0 3px 14px 2px fade(@pclr, 6%), 0 5px 5px -3px fade(@pclr, 5%);}
+.z-depth-5{box-shadow:0 16px 24px 2px fade(@pclr, 8%),0 6px 30px 5px fade(@pclr, 6%),0 8px 10px -5px fade(@pclr, 12%)}
+.grad {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f44542+0,fd4f6b+100 */
+	.pbg; /* Old browsers */
+	background-image: -moz-linear-gradient(45deg, @pclr 0%, darken(@pclr, 5%) 100%);
+	background-image: -webkit-linear-gradient(45deg, @pclr 0%, darken(@pclr, 5%) 100%);
+	background-image: -ms-linear-gradient(45deg, @pclr 0%, darken(@pclr, 5%) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@pclr', endColorstr='@tclr',GradientType=1 ); /* IE6-9 */
+}
